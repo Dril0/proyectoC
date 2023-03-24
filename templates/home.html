@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% for post in post_list %} <!-- post_list viene de ListView contiene todos los objetos de la view del model post -->
+<div>
+    <h2><a href="">{{ post.title }}</a></h2>
+    <p>{{ post.body }}</p>
+</div>
+{% endfor %}
+
+{% endblock content %}
