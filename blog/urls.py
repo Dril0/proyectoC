@@ -6,7 +6,7 @@ from .views import (
 
 urlpatterns = [
     path(
-        "post/<int:pk>", BlogDetailView.as_view(), name="post_detail"
+        "post/<int:pk>/", BlogDetailView.as_view(), name="post_detail"
     ),  # pk es el id que agrega django a la database, es un entero por eso <int:pk>
     path(
         "", BlogListView.as_view(), name="home"
